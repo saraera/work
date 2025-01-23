@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From </title>
+    <style>
+        body {
+            
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+            color: #333;
+        }
+        .header {
+        
+            background-color: #222;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+        }
+        
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #ffcccb, #ffe4e1);
+        }
+        
+        .hero-section h2 {
+            font-size: 36px;
+            margin: 0 0 10px;
+        }
+        
+        .hero-section button {
+            background-color: #222;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .hero-section button:hover {
+            background-color: #555;
+        }
+        .collection-section {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .collection-section .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .collection-section .item {
+            text-align: center;
+            width: 150px;
+        }
+        
+        .collection-section .item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        
+        .collection-section .item p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #222;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Shrisha Jewellers</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <h2>Exclusive Jewelry</h2>
+        <p>Discover timeless elegance and beauty in our collection.</p>
+        <button onclick="showMessage()">Explore Now</button>
+    </section>
+
+    <section id="collection" class="collection-section">
+        <h2>Our Collection</h2>
+        <div class="gallery">
+            <div class="item">
+                <img src="c:\Users\Sushant Kolekar\Downloads\ring.jpg" alt="Ring">
+                <p>Diamond Ring</p>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Q1n4E7zsXvZ1kIOsqFrQ0DX58J9bOhEbuQ&s"height="85%" alt="Necklace">
+                <p>Gold Necklace</p>
+            </div>
+            <div class="item">
+                <img src="c:\Users\Sushant Kolekar\Downloads\silver.jpg" height="85%" alt="Bracelet">
+                <p>Silver Bracelet</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <p>&copy; 2024 Shrisha Jewellers Store. All rights reserved.</p>
+    </footer>
+
+    <script> 
+        function showMessage() {
+            alert("Explore our exclusive jewelry collection!");
+        }
+    </script>
+</body>
+</html>
